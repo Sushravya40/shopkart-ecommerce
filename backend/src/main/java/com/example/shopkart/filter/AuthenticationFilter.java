@@ -21,10 +21,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Component;
 
 @Component
-@CrossOrigin(
-	    origins = "http://localhost:5173",
-	    allowCredentials = "true"
-	)
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class AuthenticationFilter extends OncePerRequestFilter {
 
 	private final AuthService authService;

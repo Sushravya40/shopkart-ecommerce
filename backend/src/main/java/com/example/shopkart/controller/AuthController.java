@@ -17,7 +17,7 @@ import com.example.shopkart.service.AuthService;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class AuthController {
 
 	private final AuthService authService;
