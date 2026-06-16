@@ -92,3 +92,17 @@ This project uses **Hibernate (spring.jpa.hibernate.ddl-auto=update)**. This mea
 ## 🔒 Security Note
 * Never commit real production database passwords or active Payment API Secret Keys to GitHub.
 * If deploying to production, use Environment Variables to inject secrets into `application.properties`.
+
+---
+
+## 📸 Screenshots
+
+*(Add your screenshots here. You can drag and drop images directly into GitHub to upload them!)*
+
+---
+
+## 🔮 Future Enhancements
+
+* **Wishlist:** Allow users to save favorite items for later.
+* **Product Reviews & Ratings:** Enable customers to rate and review products.
+* **Order Tracking:** Real-time updates for delivery status.
