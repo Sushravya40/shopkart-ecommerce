@@ -135,8 +135,7 @@ const response = await fetch(
 
     const token = localStorage.getItem("token");
 
-const response = await fetch(
-  "/api/payment/create",
+const response = await fetch((import.meta.env.VITE_API_URL || "") + "/api/payment/create",
   {
     method: "POST",
     headers: {
@@ -172,8 +171,7 @@ const response = await fetch(
             // Payment success, verify on backend
             const token = localStorage.getItem("token");
 
-const verifyResponse = await fetch(
-  "/api/payment/verify",
+const verifyResponse = await fetch((import.meta.env.VITE_API_URL || "") + "/api/payment/verify",
   {
     method: "POST",
     headers: {

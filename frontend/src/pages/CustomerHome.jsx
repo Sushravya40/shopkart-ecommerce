@@ -154,8 +154,7 @@ export default function CustomerHome() {
       const token =
         localStorage.getItem("token");
 
-      const response = await fetch(
-        "/api/cart/add",
+      const response = await fetch((import.meta.env.VITE_API_URL || "") + "/api/cart/add",
         {
           method: "POST",
 

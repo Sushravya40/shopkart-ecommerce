@@ -107,8 +107,7 @@ const AdminDashboard = () => {
 
   const handleDeleteProductSubmit = async ({ productId }) => {
     try {
-      const response = await fetch(
-        "/admin/products/delete",
+      const response = await fetch((import.meta.env.VITE_API_URL || "") + "/admin/products/delete",
         {
           method: "DELETE",
           credentials: "include",
@@ -164,8 +163,7 @@ const AdminDashboard = () => {
       // Fetch user details
       try {
         console.log("Fetching user details for ID:", data.userId); // Debugging
-        const response = await fetch(
-          "/admin/user/getbyid",
+        const response = await fetch((import.meta.env.VITE_API_URL || "") + "/admin/user/getbyid",
           {
             method: "POST",
             credentials: "include",
@@ -194,8 +192,7 @@ const AdminDashboard = () => {
       // Update user details
       try {
         console.log("Updating user details:", data); // Debugging
-        const response = await fetch(
-          "/admin/user/modify",
+        const response = await fetch((import.meta.env.VITE_API_URL || "") + "/admin/user/modify",
           {
             method: "PUT",
             credentials: "include",
